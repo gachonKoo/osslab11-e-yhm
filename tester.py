@@ -1,12 +1,9 @@
-from geo import hello
-from geo.utils import calculate_distance, get_location
+import geo.utils as utils
 
-def main():
-    print("=== Geo Package Test ===")
-    print(hello())
-    print(calculate_distance(0, 0, 3, 4))
-    print(get_location("Seoul"))
+a, b = 3, 4
+c = utils.pythagoras(a, b)
+print('c =', c)
 
-if __name__ == "__main__":
-    main()
-
+r = 10
+area = utils.circle(r)
+print('area =', area)
